@@ -10,7 +10,7 @@ import {
 import Button from "../../components/UI/Button/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCategory } from "../../redux/Categories/categoriesSlice";
-import  imgHero  from "../../assets/img/fondo1.avif";
+import  imgHero  from "../../assets/img/fondo 3.jpg";
 
 export const Hero = ({ doScroll }) => {
   const [value, setValue] = useState("");
@@ -50,9 +50,10 @@ export const Hero = ({ doScroll }) => {
       </ContainersSearchHero>
 
       <ContainersImagenHero>
+      <h1>bienvenido!.</h1>
         <ContainerImg>
           <img src={imgHero} alt="" />
-          <h1>El trabajo duro debe ser recompensado por la buena hamburguesa</h1>
+         
         </ContainerImg>
       </ContainersImagenHero>
     </ContainerHeroStyled>

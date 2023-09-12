@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const HomeWrapper = styled.div`
+  margin-top: 8rem;
   width: 100%;
   margin: 0 auto;
   h2 {
@@ -18,13 +19,13 @@ export const CategoriasWrapper = styled.section`
 `;
 
 export const ProductosWrapper = styled.section`
-  padding-top: 5rem;
+   margin-top: 8rem;
   text-align: center;
 `;
 
 export const RecomendadosWrapper = styled.section`
-  margin-top: 5rem;
-  width: 100%;
+  margin-top: 8rem;
+
   text-align: center;
 
   h2 {

@@ -44,51 +44,21 @@ export const LabelHero = styled.label`
 
 
 `
-// slider
+// img
 
 
 export const ContainersImagenHero = styled.div`
   width: 100% ;
-  height: 580px ;
-  margin:40px;
-  
-
-
-  @media (max-width: 500px ) {
-    width: 100% ;
-  height: 480px ;
-  }
-
-  @media (max-width: 500px ) {
-    width: 100% ;
-  height: 280px ;
-  }
+  margin-top: 10px ;
+  width: auto;
  
-
-`
-export const ContainerImg = styled.div`
-  width: 100%;
-  height:  550px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  img{
-    height: 100%;
-    width: 80%;
-    opacity: 0.5;
-    border-radius: 20px;
-    z-index: -1000;
-    position: static;
-  }
   h1{
-    position: relative;
     text-align: center;
-    bottom: 7cm;
-    color: #FFC83D;
+    font-weight: bolder;
+    font-family: 'Kalam', cursive;
+    color: var( --text-bg-red);
     border-right: 3px solid white;
-    font-size: 2rem;
+    font-size: 5rem;
     animation: teclear 3s steps(16), efecto 1s step-end infinite;
   }
   
@@ -106,12 +76,22 @@ export const ContainerImg = styled.div`
       }
     }
 
+`
+export const ContainerImg = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -85px;
+  padding: 0%;
 
-
-  @media (max-width: 500px) {
-    height: 450px;
-    
+  img{
+    position: relative;
+   right: 20px;
+    height: 500px;
+    width: 500px;
   }
+
+
 `
 
 

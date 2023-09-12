@@ -4,12 +4,10 @@ export const GlobalStyles = createGlobalStyle`
 
     :root {
     --red-bg: #D72300;
-    --text-bg-red: #F5F2F1;
-    --orange: #ff9d01;
-    --magenta: #FF005C;
+    --text-bg-red: #F9F9F8;
+   
     --gray-bg: #2b2b2c;
-  --btn-gradient: linear-gradient(83deg, #ffa100, #fb103d);
-  --btn-gradient-secondary: linear-gradient(140deg, #3B3022, #3B2329);
+
   }
 
   html{
