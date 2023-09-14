@@ -57,9 +57,11 @@ export const ContainersImagenHero = styled.div`
     font-weight: bolder;
     font-family: 'Kalam', cursive;
     color: var( --text-bg-red);
-    border-right: 3px solid white;
     font-size: 5rem;
-    animation: teclear 3s steps(16), efecto 1s step-end infinite;
+    animation: teclear 3s steps(16);
+    @media (max-width: 400px) {
+      font-size: 3rem;
+    }
   }
   
   @keyframes teclear {
@@ -70,11 +72,7 @@ export const ContainersImagenHero = styled.div`
         clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%); ;
       }
     }
-    @keyframes efecto{
-      50%{
-        border-color: transparent;
-      }
-    }
+
 
 `
 export const ContainerImg = styled.div`
@@ -83,12 +81,25 @@ export const ContainerImg = styled.div`
   align-items: center;
   margin-top: -85px;
   padding: 0%;
+  height: auto;
+  width: auto;
+  @media (max-width: 500px ) {
+      height: 260;
+      width: 260;
+      
+    }
 
   img{
     position: relative;
    right: 20px;
-    height: 500px;
-    width: 500px;
+    height: 60%;
+    width: 60%;
+    @media (max-width: 500px ) {
+      height: 200;
+      width: 200;
+      right: 10px;
+    }
+  
   }
 
 
