@@ -11,7 +11,7 @@ export const ProtectedRoute = ({ children, redirectTo }) => {
     } if (currentUser.verified === false) {
         return (
             alert("su usuario debe ser registrado y verificado con el código enviado a su email para realizar la compra"),
-            <Navigate to={redirectTo} state={{ redirectedFromVerify: false }} />
+            <Navigate to="/verificar"/>
         )
     } if (currentUser.verified === true) {
 

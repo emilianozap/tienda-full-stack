@@ -31,9 +31,10 @@ export const Verify = () => {
         <Formik
           initialValues={verifyInitialValue}
           validationSchema={verifyValidationsSchema}
-          onSubmit={async (values) => {
+          onSubmit={async (values, actions) => {
             await verify(currentUser.email, values.code);
             dispatch(setVerified());
+            actions.resetForm(navigate("/"))
             
           
           }}

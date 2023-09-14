@@ -2,9 +2,8 @@ import { Routes as ReactDomRoutes, Route } from "react-router-dom";
 import { Home } from "../Pages/Home/Home";
 import { Login } from "../Pages/Login/Login";
 import { Register } from "../Pages/register/Register";
-import { RegistroCompletado } from "../Pages/RegistroCompletado/RegistroCompletado";
 import { PageNotFound } from "../Pages/PageNotFound/PageNotFound";
-import { FinalizarCompra } from "../Pages/checkout/checkout";
+import { FinalizarCompra } from "../Pages/FinalizarCompra/checkout";
 import { ProtectedRoute } from "../components/ProtectedRoute/ProtectedRoute";
 import { Verify } from "../Pages/verify/Verify";
 import { RecuperarPassword } from "../Pages/RecuperarPassword/RecuperarPassword";
@@ -20,7 +19,6 @@ function Routes() {
       <Route path="/login" element={<Login />} />
       <Route path="/registrarse" element={<Register />} />
       <Route path="/verificar" element={<Verify />} />
-      <Route path="/registrado" element={<RegistroCompletado />} />
       <Route path="*" element={<PageNotFound />} />
       <Route
         path="/recuperar"

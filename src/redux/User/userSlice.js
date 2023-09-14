@@ -20,14 +20,16 @@ const userSlice = createSlice({
                 currentUser: action.payload
             }
         },
-        setVerified: state => {
-            if (state.currentUser) {
-                state.currentUser.verified = true;
+        setVerified: (state, action )=> {
+            return {
+                ...state,
+                currentUser: action.payload
             }
+         
         },
 
-        setPassword: (state, action) => {
-            if (state.currentUser) {
+        setPassword: (state) => {
+            if (!state.currentUser) {
                 state.currentUser.password = Input.value;
             }
     

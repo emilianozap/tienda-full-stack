@@ -11,6 +11,8 @@ export const Cart = () => {
       0
     )
 
+  
+
     
   return (
     <IconContainers onClick={()=> dispatch(toggleCart())}>

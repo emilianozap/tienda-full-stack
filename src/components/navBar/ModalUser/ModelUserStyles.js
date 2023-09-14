@@ -46,5 +46,11 @@ export const UserTypeStyled = styled.div`
 display: flex;
 margin: 10px 10px 0px 0px;
 flex-direction: column;
+p{
+  text-align: center;
+  font-size: 100px;
+  margin: 0%;
+  padding: 0%;
+}
 
 `

@@ -29,6 +29,11 @@ const ModalUser = () => {
 
           <HrStyled />
           <UserTypeStyled>
+            {currentUser?.verified === false ? (
+              <LinkStyled to="/verificar">Verificarse</LinkStyled>
+            ) : (
+              <p>😎</p>
+            )}
             {currentUser?.rol === ADMIN ? (
               <>
                 <LinkStyled to="/issue">Crear Issue</LinkStyled>
