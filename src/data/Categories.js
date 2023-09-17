@@ -3,7 +3,7 @@ export const categories = [
     id: 0,
     img: require('../assets/img/categoria.png'),
     title: 'Todos',
-    category: ' '
+    category: "",
   },
   {
     id: 1,
