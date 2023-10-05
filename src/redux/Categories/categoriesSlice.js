@@ -3,7 +3,7 @@ import { categories } from "../../data/Categories";
 
 const initialState ={
     categories: categories,
-    selectedCategory: null
+    selectedCategory: null === "todos"
 
 }
     

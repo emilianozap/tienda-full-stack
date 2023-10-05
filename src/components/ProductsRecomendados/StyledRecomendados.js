@@ -7,7 +7,7 @@ export const ContainersRecomendadosStyled = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 3rem 1rem;
+  gap: 1rem 1rem;
   box-sizing: border-box ;
   
 `

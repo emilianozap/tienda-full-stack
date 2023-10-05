@@ -48,9 +48,7 @@ export const LabelHero = styled.label`
 
 
 export const ContainersImagenHero = styled.div`
-  width: 100% ;
-  margin-top: 10px ;
-  width: auto;
+  width: 100% auto;
  
   h1{
     text-align: center;
